@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Синапс.ai</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid d-flex flex-column vh-100">
+        <div class="row bg-dark text-white p-3">
+            <div class="col-1">
+                <img src="logo.png" id="logo" alt="Logo" class="img-fluid">
+            </div>
+            <div class="col">
+                <h1 class="h3">Синапс.ai</h1>
+            </div>
+        </div>
+        <div class="row flex-grow-1 overflow-auto bg-light" id="chat-window">
+            <div class="col-12 p-3">
+                <div id="chat-messages"></div>
+            </div>
+        </div>
+        <div class="row bg-dark text-white p-3">
+            <div class="col-10">
+                <input type="text" id="message-input" class="form-control" placeholder="Введите сообщение">
+            </div>
+            <div class="col-1">
+                <button id="send-button" class="btn btn-primary"><img src="send.png" alt="Send" class="img-fluid"></button>
+            </div>
+            <div class="col-1">
+                <button id="attach-button" class="btn btn-secondary"><img src="attach.png" alt="Attach" class="img-fluid"></button>
+                <button id="mic-button" class="btn btn-secondary"><img src="mic.png" alt="Mic" class="img-fluid"></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
